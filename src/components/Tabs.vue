@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article class="grid">
     <section class="tab-titles">
       <div class="chewy-tab-title" @click="setActive('apple')">Apple</div>
       <div class="chewy-tab-title" @click="setActive('banana')">Banana</div>
@@ -46,5 +46,9 @@ export default {
 @import "./chewy-tabs.css";
 .tab-titles {
   // display: flex;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 30% 70%;
 }
 </style>
